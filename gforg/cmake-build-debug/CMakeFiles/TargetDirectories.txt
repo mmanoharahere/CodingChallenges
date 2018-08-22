@@ -1,0 +1,3 @@
+/Users/mansi/CLionProjects/gforg/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mansi/CLionProjects/gforg/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mansi/CLionProjects/gforg/cmake-build-debug/CMakeFiles/gforg.dir
