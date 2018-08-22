@@ -1,0 +1,67 @@
+#include<stdio.h>
+#include<iostream>
+
+using namespace std;
+
+struct QNode{
+    int val;
+    struct QNode* next;
+};
+
+struct Queue{
+    struct QNode* front, * rear;
+};
+
+struct QNode* newnode(int k){
+    struct QNode* temp = (struct QNode*)malloc(sizeof(struct QNode));
+    temp->val = k;
+    temp->next = nullptr;
+    return temp;
+}
+
+struct Queue* createQueue(){
+    struct Queue* q = (struct Queue*) malloc(sizeof(struct Queue));
+    q->front = nullptr;
+    q->rear = nullptr;
+    return q;
+}
+
+void enqueue(struct Queue*q, int k){
+    struct QNode * temp = newnode(k);
+    if(q->rear == nullptr){
+        q->rear = q->front = temp;
+        return;
+    }
+
+    q->rear->next = temp;
+    q->rear = temp;
+
+}
+
+struct QNode* dequeue(struct Queue*q){
+    if(q->front == nullptr){
+        return nullptr;
+    }
+    struct QNode* temp = q->front;
+    q->front = q->front->next;
+
+    if(q->front == nullptr){
+        q->rear= nullptr;
+    }
+    return temp;
+}
+int main()
+{
+    struct Queue *q = createQueue();
+    enqueue(q, 10);
+    enqueue(q, 20);
+    dequeue(q);
+    dequeue(q);
+    enqueue(q, 30);
+    enqueue(q, 40);
+    enqueue(q, 50);
+    struct QNode *n = dequeue(q);
+    if (n != NULL)
+        printf("Dequeued item is %d", n->val);
+    return 0;
+}

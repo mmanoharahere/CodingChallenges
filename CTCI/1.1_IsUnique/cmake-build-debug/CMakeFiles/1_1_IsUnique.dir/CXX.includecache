@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mansi/CLionProjects/CTCI/1.1_IsUnique/main.cpp
+string
+-
+vector
+-
+iostream
+-
+bitset
+-
+map
+-
+algorithm
+-
+

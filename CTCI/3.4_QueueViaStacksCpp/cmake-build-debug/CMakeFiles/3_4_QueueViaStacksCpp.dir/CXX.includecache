@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mansi/CLionProjects/CTCI/3.4_QueueViaStacksCpp/main.cpp
+iostream
+-
+stack.h
+/Users/mansi/CLionProjects/CTCI/3.4_QueueViaStacksCpp/stack.h
+
+/Users/mansi/CLionProjects/CTCI/3.4_QueueViaStacksCpp/stack.h
+utility
+-
+

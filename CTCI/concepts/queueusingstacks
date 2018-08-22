@@ -1,0 +1,81 @@
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+struct sNode{
+    int data;
+    struct sNode* next;
+};
+
+void push(struct sNode** top, int val){
+    struct sNode* new_node = (struct sNode*) malloc(sizeof(struct sNode));
+    if(new_node == nullptr){
+        cout<<"Stack Overflow "<<endl;
+        exit(0);
+    }
+
+    new_node->data = val;
+    new_node->next = (*top);
+
+    (*top) = new_node;
+
+}
+int pop(struct sNode** top){
+    struct sNode* top_ref;
+    int res;
+
+    if(*top == nullptr){
+        cout<<"Stack underflow"<<endl;
+        exit(0);
+    }
+
+    else{
+        top_ref = *top;
+        res = top_ref->data;
+        *top = top_ref->next;
+        free(top_ref);
+        return res;
+
+    }
+}
+
+struct queue{
+    struct sNode *stack1;
+    struct sNode *stack2;
+};
+
+void enqueue(struct queue* q, int x){
+
+    push(&q->stack1,x);
+}
+
+int dequeue(struct queue* q){
+    int x;
+
+    if(q->stack1 == nullptr && q->stack2 == nullptr){
+        cout<<"Empty queue"<<endl;
+        exit(0);
+    }
+    if(q->stack2 == nullptr){
+        while(q->stack1!= nullptr){
+            x = pop(&q->stack1);
+            push(&q->stack2,x);
+        }
+    }
+
+    x = pop(&q->stack2);
+    return x;
+}
+
+int main(){
+    struct queue* q = (struct queue*)malloc(sizeof(struct queue));
+    q->stack1 = nullptr;
+    q->stack2 = nullptr;
+
+    enqueue(q,1);
+    enqueue(q,2);
+    enqueue(q,3);
+
+    cout<<dequeue(q)<<endl;
+    cout<<dequeue(q)<<endl;
+    cout<<dequeue(q)<<endl;
+}

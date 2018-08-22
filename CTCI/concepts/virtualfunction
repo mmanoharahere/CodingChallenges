@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+class University{
+public :
+virtual void print(){
+cout<<"University print"<<endl;
+}
+
+void show(){
+cout<<"University show"<<endl;
+}
+};
+
+class USC: public University{
+public:
+void print(){
+cout<<"USC print"<<endl;
+}
+void show(){
+cout<<"USC show"<<endl;
+}
+
+};
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+
+    University* univ;
+    USC usc;
+    univ = &usc;
+
+    univ->print();
+    univ->show();
+
+    return 0;
+}
