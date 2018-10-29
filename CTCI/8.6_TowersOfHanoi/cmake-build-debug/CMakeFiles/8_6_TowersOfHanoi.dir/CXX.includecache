@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mansi/CLionProjects/codingChallenges/CTCI/8.6_TowersOfHanoi/main.cpp
+iostream
+-
+stdio.h
+-
+
