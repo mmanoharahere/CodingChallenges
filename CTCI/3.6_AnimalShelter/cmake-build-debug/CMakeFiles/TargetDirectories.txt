@@ -1,0 +1,3 @@
+/Users/mansi/CLionProjects/codingChallenges/CTCI/3.6_AnimalShelter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mansi/CLionProjects/codingChallenges/CTCI/3.6_AnimalShelter/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mansi/CLionProjects/codingChallenges/CTCI/3.6_AnimalShelter/cmake-build-debug/CMakeFiles/3_6_AnimalShelter.dir
