@@ -1,0 +1,3 @@
+/Users/mansi/CLionProjects/codingChallenges/CTCI/lc_130.surroundedRegions/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mansi/CLionProjects/codingChallenges/CTCI/lc_130.surroundedRegions/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mansi/CLionProjects/codingChallenges/CTCI/lc_130.surroundedRegions/cmake-build-debug/CMakeFiles/lc_130_surroundedRegions.dir
