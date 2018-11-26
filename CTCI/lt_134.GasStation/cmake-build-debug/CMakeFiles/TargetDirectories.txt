@@ -1,0 +1,3 @@
+/Users/mansi/CLionProjects/codingChallenges/CTCI/lt_134.GasStation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mansi/CLionProjects/codingChallenges/CTCI/lt_134.GasStation/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mansi/CLionProjects/codingChallenges/CTCI/lt_134.GasStation/cmake-build-debug/CMakeFiles/lt_134_GasStation.dir
